@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Open GitHub in VS Code",
+    "short_name": "Open GitHub in VS Code",
+    "description": "Open GitHub repository in VS Code within browser",
+    "author": "Anton Isaiev",
+    "version": "1.0",
+    "content_scripts": [{
+        "matches": [
+            "https://github.com/*/*"
+        ],
+        "js": [
+            "content.js"
+        ]
+    }],
+    "icons": {
+        "128": "icon.png"
+    }
+}
